@@ -1,3 +1,3 @@
 # Projet-rebtal-car-website
-hots: https://saiess.github.io/Projet-rental-car-website/
+hots:
 <img src="homepage.png"/>
