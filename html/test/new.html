@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hello">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 63.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            background-image: url("https://intellivoire.net/wp-content/uploads/2019/03/bugatti.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+        }
+
+        a:hover {
+            color: #7e7b79;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            font-size: 1rem;
+            text-transform: capitalize;
+            gap: 2rem;
+            font-weight: bold;
+
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        button {
+            padding: .3rem 1rem;
+            border-radius: 1rem;
+        }
+
+        .login {
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+            margin: 0 auto;
+            margin-bottom: auto;
+            margin-top: 2rem;
+            text-align: center;
+            width: 80%;
+        }
+
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .text {
+            font-size: 2rem;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .footer img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .open {
+            display: none;
+        }
+        .logo_car {
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 560px) {
+            .open {
+                display: inline-block;
+            }
+
+            .main {
+                width: 90%;
+            }
+
+            .btns {
+                display: none;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .mobile-menu {
+
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: black;
+                height: 100%;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .mobile-btns {
+                margin-top: 5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            button {
+                font-size: 2rem;
+            }
+
+            .mobile-menu-open {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .links {
+                list-style: none;
+                margin-top: 20%;
+                text-transform: capitalize;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            a {
+                font-size: 3rem;
+            }
+
+            .close {
+                position: absolute;
+                right: 2rem;
+                top: 2rem;
+            }
+
+            .footer img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="WebSiteLogo.png" alt="u" class="logo_car">
+        </div>
+
+        <ul class="menu">
+            <li><a href="../../index.html">home</a></li>
+            <li><a href="../../Gallery.html">gallery</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="">events</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <span class="close"><img src="menu.png" alt="u" class="logo_car"></span>
+            <ul class="links">
+                <li><a href="../../index.html">home</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">events</a></li>
+            </ul>
+            <div class="mobile-btns">
+                <button class="login">sing in</button>
+                <button class="signup">sing up</button>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="login">sing in</button>
+            <button class="signup">sing up</button>
+        </div>
+        <span class="open"><img src="menu.png" alt="u" class="logo_car"></span>
+    </div>
+    <div class="main">
+        <h1>
+            ABOUT US
+        </h1>
+        <div class="text">
+            <p>HireFire lunched in 2021 with an ambitious vision: to make booking an auto rental simple, fast and easy.
+            </p>
+            <p>We've continued to improve and invest in HireFire.com to help you save time and money.</p>
+            <p>We realized that finding the best deal on a car rental can be time consuming and confusing.</p>
+            <p>So we've worked with the top online travel agencies in the world, the best car rental brokers,
+                the most comprehensive car hire aggregators and well-known car rental companies</p>
+            <p>(as well as many lesser known rental car brands for you to discover) to bring all the results to you in
+                one
+                search.</p>
+            <p>All to provide you with The Perfect Car at the Best Price. We wish you a safe and enjoyable trip,</p>
+            <p>no matter where and when you plan to go.Thank you for your business, HireFire.com</p>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="facebookIcon.png" alt="" class="fb">
+        <img src="twitterIcon.png" alt="" class="twtr">
+        <div class="prg">
+            <p>fatimazahra96@gmail.com</p>
+            <p>Copyright © 2021 HireFire. All rights reserved</p>
+        </div>
+        <img src="instagram.png" alt="" class="inst">
+        <img src="youtubeIcon.png" alt="" class="ytb">
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function handleClick() {
+            $('.mobile-menu').toggleClass('mobile-menu-open');
+        }
+
+        $('.open').click(handleClick);
+        $('.close').click(handleClick);
+        $('.mobile-menu li').click(handleClick);
+    </script>
+</body>
+
+</html>
